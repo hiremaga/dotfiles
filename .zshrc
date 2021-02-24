@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(chruby git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,9 +114,6 @@ export PATH=$GOPATH/bin:$PATH
 export PATH="$PATH:$HOME/workspace/flutter/bin"
 
 alias nproc="sysctl -n hw.logicalcpu"
-
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
