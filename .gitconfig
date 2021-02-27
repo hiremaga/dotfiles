@@ -2,6 +2,7 @@
 st = status
 ci = commit
 co = checkout
+lol=log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 [url "git@github.com:"]
 pushInsteadOf = https://github.com/
@@ -10,6 +11,7 @@ pushInsteadOf = git://github.com/
 [user]
 name = Abhi Hiremagalur
 email = abhijit@hiremaga.com
+
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
