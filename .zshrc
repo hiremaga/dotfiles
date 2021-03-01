@@ -109,3 +109,6 @@ export PATH="$PATH:$HOME/workspace/flutter/bin"
 alias nproc="sysctl -n hw.logicalcpu"
 
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+# Workaround for https://docs.tilt.dev/faq.html#q-when-i-run-tilt-version-i-see-template-engine-not-found-for-version-what-do-i-do
+alias tilt="/usr/local/bin/tilt"
