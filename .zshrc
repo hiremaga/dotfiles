@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 export PATH="$PATH:$HOME/workspace/flutter/bin"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 alias nproc="sysctl -n hw.logicalcpu"
 
