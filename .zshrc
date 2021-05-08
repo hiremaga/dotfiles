@@ -1,5 +1,3 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -107,14 +105,14 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 export PATH="$PATH:$HOME/workspace/flutter/bin"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/opt/openjdk/bin:$PATH"
 
 alias nproc="sysctl -n hw.logicalcpu"
 
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 # Workaround for https://docs.tilt.dev/faq.html#q-when-i-run-tilt-version-i-see-template-engine-not-found-for-version-what-do-i-do
-alias tilt="/usr/local/bin/tilt"
+alias tilt="${HOMEBREW_PREFIX}/bin/tilt"
 
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+source "${HOMEBREW_PREFIX}/opt/kube-ps1/share/kube-ps1.sh"
 PS1='$(kube_ps1)'$PS1
