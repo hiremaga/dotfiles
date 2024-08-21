@@ -116,3 +116,6 @@ alias tilt="${HOMEBREW_PREFIX}/bin/tilt"
 
 source "${HOMEBREW_PREFIX}/opt/kube-ps1/share/kube-ps1.sh"
 PS1='$(kube_ps1)'$PS1
+
+# Created by `pipx` on 2024-08-14 21:13:37
+export PATH="$PATH:/Users/hiremaga/.local/bin"
