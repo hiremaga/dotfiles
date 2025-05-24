@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(chruby gcloud git history-substring-search kubectl nvm)
+plugins=(chruby gcloud git history-substring-search nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,16 +106,8 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 export PATH="$PATH:$HOME/workspace/flutter/bin"
 export PATH="${HOMEBREW_PREFIX}/opt/openjdk/bin:$PATH"
+export PATH="$PATH:/Users/hiremaga/.local/bin" # Created by `pipx` on 2024-08-14 21:13:37
 
 alias nproc="sysctl -n hw.logicalcpu"
-
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-# Workaround for https://docs.tilt.dev/faq.html#q-when-i-run-tilt-version-i-see-template-engine-not-found-for-version-what-do-i-do
-alias tilt="${HOMEBREW_PREFIX}/bin/tilt"
-
-source "${HOMEBREW_PREFIX}/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1)'$PS1
-
-# Created by `pipx` on 2024-08-14 21:13:37
-export PATH="$PATH:/Users/hiremaga/.local/bin"
